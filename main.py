@@ -7,7 +7,9 @@ def parallel_processing(n, m, data):
         for j in range(1,n):
             if thread[j]<thread[threadnxt]:
                 threadnxt=j
-        x=thread[threadnxt]+data[i]
+        x=thread[threadnxt]
+        y=x+data[i]
+        thread[threadnxt]=y
         output.append((threadnxt, x))
     return output
 
