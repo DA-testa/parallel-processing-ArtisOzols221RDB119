@@ -1,6 +1,6 @@
 def parallel_processing(n, m, data):
     output = []
-    thread=n*[0]
+    thread=[0]*n
 
     for i in range(m):
         threadnxt=0
